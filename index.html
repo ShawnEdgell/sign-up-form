@@ -1,48 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign-up Form</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+  <body>
     <div class="content">
-
-        <div class="picture">     
-              <div class="logo-container">
-                <img src="./images/odin-lined.png" alt="logo" class="logo">
-                <h1 class="odin">ODIN</h1>
-            </div>
+      <div class="picture">
+        <div class="logo-container">
+          <img src="./images/odin-lined.png" alt="logo" class="logo">
+          <h1 class="odin">ODIN</h1>
         </div>
-          <div class="comment-section">
-            <h2 class="comment-reply-title">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.<br>Sign up <i>now</i> to get started.</i><br><br>You <i>know</i> you want to.</h2>
-            <form id="commentform" class="comment-form">
-              <div class="comment-form-name">
-                <input id="name" placeholder="Name *" name="name" type="text" value="" pattern="^[^0-9]+$" size="30" maxlength="245" required>
-                <label for="name" data-help="¿Are you 11 from Stranger Things?">Name</label>
-              </div>
-              <div class="comment-form-surname">
-                <input id="surname" placeholder="Surname *" name="surname" type="text" value="" size="30" maxlength="245" required>
-                <label for="surname" data-help="A girl has no name- Arya Stark">Surname</label>
-              </div>
-              <div class="comment-form-email">
-                <input id="email" placeholder="Email *" name="email" type="email" value="" size="30" maxlength="100" aria-describedby="email-notes" required>
-                <label for="email" data-help="Format email@email.com">Email</label>
-              </div>
-              <div class="comment-form-url">
-                <input id="url" placeholder="Website" name="url" type="url" value="" size="30" maxlength="200">
-                <label for="url" data-help="Should start with http:// o https://">Website</label>
-              </div>
-              <div class="comment-form-comment">
-                <textarea textarea="" placeholder="Comment *" id="comment" name="comment" cols="45" rows="8" maxlength="65525" required></textarea>
-                <label for="comment" data-help="Escribe algo! Lo primero que se te ocurra">Comment</label>
-              </div>
-              <div class="form-submit">
-                <input name="submit" type="submit" id="submit" class="submit" value="Post Comment">
-              </div>
-            </form>
-          </div> 
       </div>
+      <div class="comment-section">
+        <h2 class="comment-reply-title">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started. You know you want to.</h2>
+        <form id="commentform" class="comment-form">
+          <h3>Let's do this!</h3>
+          <input id="first_name" placeholder="First Name" name="first_name" type="text" required>
+          <input id="last_name" placeholder="Last Name" name="last_name" type="text" required>
+          <input id="email" placeholder="Email" name="email" type="email" required>
+          <input id="phone" placeholder="Phone Number" name="phone" type="tel" pattern="\d{10}" required>
+          <input id="password" placeholder="Password" name="password" type="password" required>
+          <input id="confirm_password" placeholder="Confirm Password" name="confirm_password" type="password" required>
+          <button type="submit" id="submit" class="submit">Create Account</button>
+          <p>Already have an account? <a>Log in</a></p>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
