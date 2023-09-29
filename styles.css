@@ -157,6 +157,23 @@ a {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
+.toggle-theme {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  background: #fff;
+  color: #000;
+  font-size: 24px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
 @media (max-width: 600px) {
   .content {
     flex-direction: column;
